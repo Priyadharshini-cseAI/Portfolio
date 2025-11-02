@@ -169,53 +169,56 @@
 <div id="toast" class="toast">Demo coming soon!</div>
 
 
-    <!-- CONTACT -->
-    <section id="contact" class="section card-fade">
-      <div class="section-inner">
-        <h2 class="section-title">Contact</h2>
-        <p class="lead">Want to chat about internships, collaborations, or opportunities? Send a note.</p>
+   <!-- CONTACT -->
+<section id="contact" class="section card-fade">
+  <div class="section-inner">
+    <h2 class="section-title">Contact</h2>
+    <p class="lead">Want to chat about internships, collaborations, or opportunities? Send a note.</p>
 
-        <div class="contact-wrap">
-          <div class="contact-card glass">
-            <h3>Get in touch</h3>
-            <form id="contact-form" novalidate>
-              <label>
-                <span>Name</span>
-                <input type="text" id="name" required placeholder="Your name" />
-              </label>
+    <div class="contact-wrap">
+      <div class="contact-card glass">
+        <h3>Get in touch</h3>
+        
+        <!-- ✅ Formspree integrated -->
+        <form action="https://formspree.io/f/xgvprkjj" method="POST">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
 
-              <label>
-                <span>Email</span>
-                <input type="email" id="email" required placeholder="you@example.com" />
-              </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
 
-              <label>
-                <span>Message</span>
-                <textarea id="message" required rows="4" placeholder="Brief message..."></textarea>
-              </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" required rows="4" placeholder="Brief message..."></textarea>
+          </label>
 
-              <div class="form-row">
-                <button type="submit" class="btn cta">Send Message</button>
-                <button type="button" class="btn ghost" id="close-contact">Close</button>
-              </div>
-
-              <p class="form-note">Or email directly at <a href="mailto:priyasiva160506@gmail.com">priyasiva160506@gmail.com</a></p>
-            </form>
+          <div class="form-row">
+            <button type="submit" class="btn cta">Send Message</button>
+            <button type="button" class="btn ghost" id="close-contact">Close</button>
           </div>
 
-        <div class="contact-info glass">
-          <h4>Other ways</h4>
-          <p><strong>LinkedIn:</strong> 
-           <a href="https://www.linkedin.com/in/priyadharshini-ai" target="_blank">www.linkedin.com/in/priyadharshini-ai</a>
-          </p>
-          <p><strong>Location:</strong> Chennai, India</p>
-          <p><strong>Availability:</strong> Open to internships & roles</p>
-        </div>
+          <p class="form-note">Or email directly at <a href="mailto:priyasiva160506@gmail.com">priyasiva160506@gmail.com</a></p>
+        </form>
       </div>
-    </section>
-  </main>
 
-  <button id="scroll-top" aria-label="Scroll to top">↑</button>
-  <script src="script.js"></script>
+      <div class="contact-info glass">
+        <h4>Other ways</h4>
+        <p><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/priyadharshini-ai" target="_blank">www.linkedin.com/in/priyadharshini-ai</a>
+        </p>
+        <p><strong>Location:</strong> Chennai, India</p>
+        <p><strong>Availability:</strong> Open to internships & roles</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+<script src="script.js"></script>
 </body>
 </html>
+
