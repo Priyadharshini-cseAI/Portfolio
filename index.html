@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Priyadharshini — AI Engineer & Web Dev</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="color-scheme" content="dark">
+</head>
+<body>
+
+  <header class="header">
+    <div class="nav-wrap">
+      <div class="brand">
+        <div class="logo-blob" aria-hidden="true"></div>
+        <span class="name">Priyadharshini</span>
+        <span class="role">AI • Web</span>
+      </div>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" id="contact-btn">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <!-- theme toggle intentionally removed — dark-only site -->
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-title">Hi, I’m <span class="neon">Priyadharshini</span></h1>
+          <h2 class="hero-sub"><span id="typed"></span><span class="caret">|</span></h2>
+          <p class="hero-desc">
+            I build production-ready AI tools and slick web apps. Currently focused on deep learning models, data pipelines, and beautiful frontends.
+          </p>
+
+          <div class="hero-ctas">
+            <button class="cta" onclick="scrollToSection('projects')">View Projects</button>
+            <a class="cta ghost" href="Priya_Resume.pdf" download>Resume</a>
+          </div>
+
+          <div class="meta">
+            <div><strong>Location:</strong> Chennai, India</div>
+            <div><strong>Open to:</strong> Internships &amp; Intern/FT roles</div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card-3d">
+            <div class="glow"></div>
+            <div class="card-content">
+              <h3>Featured</h3>
+              <p>Historian AI — conversational agent prototype</p>
+              <div class="tags">
+                <span>GPT</span><span>React</span><span>Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section card-fade">
+      <div class="section-inner">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">
+          I'm an engineering student building AI-first products — from models and pipelines to polished UIs.
+          I enjoy converting research ideas into practical web experiences.
+        </p>
+
+        <div class="about-grid">
+          <div class="glass">
+            <h4>Education</h4>
+            <p>B.E. — Computer Science (AI) — Sathyabama University</p>
+          </div>
+          <div class="glass">
+            <h4>Tools</h4>
+            <p>Python • PyTorch • Node • React • Git </p>
+          </div>
+          <div class="glass">
+            <h4>Interests</h4>
+            <p>ML , LLMs, UI design, robotics, IoT & creative coding</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section card-fade">
+      <div class="section-inner">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill glass neon-border">
+            <h5>Web</h5>
+            <p>HTML • CSS • JS • React</p>
+          </div>
+          <div class="skill glass neon-border">
+            <h5>AI / ML</h5>
+            <p>PyTorch • TensorFlow • Transformers</p>
+          </div>
+          <div class="skill glass neon-border">
+            <h5>Data</h5>
+            <p>Pandas • NumPy • SQL • Visualization</p>
+          </div>
+          <div class="skill glass neon-border">
+            <h5>DevOps</h5>
+            <p>Docker • GitHub • CI/CD</p>
+          </div>
+          <div class="skill glass neon-border">
+            <h5>Extras</h5>
+            <p>Figma • REST APIs • Testing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+<section id="projects" class="section card-fade">
+  <div class="section-inner">
+    <h2 class="section-title">Selected Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project glass neon-card">
+        <div class="project-meta">AI · Chatbot</div>
+        <h3>Historian AI Chatbot</h3>
+        <p>Conversational agent that answers history questions with sourced context and citations.</p>
+        <div class="project-footer">
+          <div class="p-tags"><span>OpenAI</span><span>LangChain</span></div>
+          <a href="#" class="p-link demo-btn">Demo</a>
+        </div>
+      </article>
+
+      <article class="project glass neon-card">
+        <div class="project-meta">Embedded · Vision</div>
+        <h3>Emotion-Responsive Smart Mirror</h3>
+        <p>Raspberry Pi + camera detects emotion & delivers supportive UI responses.</p>
+        <div class="project-footer">
+          <div class="p-tags"><span>Python</span><span>OpenCV</span></div>
+          <a href="#" class="p-link demo-btn">Repo</a>
+        </div>
+      </article>
+
+      <article class="project glass neon-card">
+        <div class="project-meta">Front-end</div>
+        <h3>Portfolio Website</h3>
+        <p>Stylish, accessible portfolio with a theme toggle, animations, and resume download.</p>
+        <div class="project-footer">
+          <div class="p-tags"><span>HTML</span><span>CSS</span></div>
+          <a href="#" class="p-link demo-btn">Source</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Toast element -->
+<div id="toast" class="toast">Demo coming soon!</div>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section card-fade">
+      <div class="section-inner">
+        <h2 class="section-title">Contact</h2>
+        <p class="lead">Want to chat about internships, collaborations, or opportunities? Send a note.</p>
+
+        <div class="contact-wrap">
+          <div class="contact-card glass">
+            <h3>Get in touch</h3>
+            <form id="contact-form" novalidate>
+              <label>
+                <span>Name</span>
+                <input type="text" id="name" required placeholder="Your name" />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" id="email" required placeholder="you@example.com" />
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea id="message" required rows="4" placeholder="Brief message..."></textarea>
+              </label>
+
+              <div class="form-row">
+                <button type="submit" class="btn cta">Send Message</button>
+                <button type="button" class="btn ghost" id="close-contact">Close</button>
+              </div>
+
+              <p class="form-note">Or email directly at <a href="mailto:priyasiva160506@gmail.com">priyasiva160506@gmail.com</a></p>
+            </form>
+          </div>
+
+        <div class="contact-info glass">
+          <h4>Other ways</h4>
+          <p><strong>LinkedIn:</strong> 
+           <a href="https://www.linkedin.com/in/priyadharshini-ai" target="_blank">www.linkedin.com/in/priyadharshini-ai</a>
+          </p>
+          <p><strong>Location:</strong> Chennai, India</p>
+          <p><strong>Availability:</strong> Open to internships & roles</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
